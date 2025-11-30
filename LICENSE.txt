@@ -1,0 +1,95 @@
+BSD 3-Clause License
+
+================================================================================
+xlsqlite - SQL Query Engine for Microsoft Excel
+================================================================================
+
+This project consists of two parts with different copyright holders:
+
+1. xlwings-derived components (COM server, UDF system, Excel communication)
+   Copyright (c) 2014-present, Zoomer Analytics LLC
+   All rights reserved.
+
+2. xlsqlite-specific components (SQL parsing, execution, type inference)
+   Copyright (c) 2025-present, DeleteThree
+   All rights reserved.
+
+Both parts are licensed under the BSD 3-Clause License as follows:
+
+================================================================================
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+================================================================================
+ATTRIBUTION
+================================================================================
+
+xlsqlite is built upon infrastructure from the xlwings project:
+https://github.com/xlwings/xlwings
+
+The following components are derived from xlwings:
+- COM server implementation (server.py)
+- UDF registration and decorator system (udfs.py)
+- Excel communication layer (main.py, _xlwindows.py, _xlmac.py)
+- VBA wrapper generation
+- Type conversion framework
+- DLL interface files
+
+Original xlwings license and copyright notices are preserved in the respective
+source files.
+
+The following components are original work developed for xlsqlite:
+- SQL query parser (parser.py)
+- Schema builder and type inference (schema.py)
+- Query executor (executor.py)
+- Error handling system (errors.py)
+- Output formatter (output.py)
+- Test suite
+- Project-specific documentation
+
+================================================================================
+THIRD-PARTY DEPENDENCIES
+================================================================================
+
+xlsqlite depends on the following open-source libraries:
+
+- pandas (BSD 3-Clause License)
+  Copyright (c) 2008-present, AQR Capital Management, LLC, Lambda Foundry, Inc.
+  and PyData Development Team
+
+- pywin32 (PSF License - Windows only)
+  Copyright (c) 1994-2008, Mark Hammond
+
+- Python Standard Library (PSF License)
+  Copyright (c) 2001-present Python Software Foundation
+
+- SQLite (Public Domain)
+  SQLite is in the public domain
+
+================================================================================
+
+For the most up-to-date license information, see:
+https://github.com/DeleteThree/xlsqlite/blob/main/LICENSE.txt
